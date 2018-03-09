@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConfigManager;
+using System.Collections.Generic;
 
 namespace ParserGenerator
 {
@@ -6,7 +7,7 @@ namespace ParserGenerator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var data = Config.LoadToClassFromFile<List<Rule>>("grammar.cfg");
         }
     }
 }
