@@ -11,7 +11,7 @@ namespace ParserGenerator
 
     public class Pattern
     {
-        [ConfigDataSource("$0")] public string Value;
+        [ConfigDataSource("")] public string Value;
 
         [ConfigDataSource("scope")] public string Scope;
         [ConfigDataSource("push.$0")] public string TransferScope;
